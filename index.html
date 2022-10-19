@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://media.discordapp.net/attachments/898978597996466189/1025823385000890390/favIcon.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://media.discordapp.net/attachments/898978597996466189/1025823385000890390/favIcon.png" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>Design Responsive</title>
+  
+  
+  
+  
+<style>
+body,html {
+  height:100%;
+  margin:0px;
+  background-color:black;
+  overflow-x:hidden;
+}
+
+#header {
+  background-color:black;
+  z-index:5;
+  position:fixed;
+  width:100%;
+  height:50px;
+  border-width:0px;
+  border-bottom-width:1px;
+  border-style:solid;
+  border-color:grey;
+  display:flex;
+  flex-direction:row;
+  padding-left:4px;
+}
+
+#name {
+  font-family:Sans-serif;
+  color:white;
+  font-size:25px;
+  margin:0px;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+#intro {
+  color:white;
+  background-image:url('https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NDYxOTk3MzAyMTYzMDc4/basic-web-design-with-html-css.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  border-radius:60px;
+  width: 80%;
+  height:60%;
+  margin-top:65px;
+  margin-right:auto;
+  margin-left:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+#introText {
+  width:80%;
+  height:50%;
+  margin:8px;
+    margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;
+  font-family:Sans-serif;
+  font-size:50px;
+  text-align:center;
+  padding:0px;
+}
+
+#name2 {
+  font-family:Sans-serif;
+  color:white;
+  width:80%;
+  font-size:35px;
+  margin:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#name4,#name9 {
+  font-family:Sans-serif;
+  color:white;
+  width:80%;
+  font-size:30px;
+  margin:10px;
+  margin-top:45px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center
+}
+
+#name5 {
+  font-family:Sans-serif;
+  color:white;
+  width:100%;
+  height:win-content;
+  font-size:23px;
+  margin:10px;
+    margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  text-align:center;
+}
+
+#name6,#name7,#name8 {
+  font-family:Sans-serif;
+  color:white;
+  width:100%;
+  height:win-content;
+  font-size:23px;
+  margin:10px;
+    margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  text-align:center;
+}
+
+#name3 {
+  font-family:Sans-serif;
+  color:white;
+  width:80%;
+  height:win-content;
+  font-size:23px;
+  margin:10px;
+    margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+}
+
+  
+#startt {
+    background-color:#424242;
+  color:white;
+  border-radius:16px;
+  padding:11px;
+  display:block;
+  border-width:0px;
+  font-size:17px;
+  }
+
+#starttt,#startttt {
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+    background-color:#424242;
+  color:white;
+  border-radius:16px;
+  padding:11px;
+  display:block;
+  border-width:0px;
+  font-size:17px;
+  }
+
+#starttttt {
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+    background-color:#424242;
+  color:white;
+  border-radius:21px;
+  padding:18px;
+  display:block;
+  border-width:0px;
+  font-size:19px;
+  }
+
+#buttonHolder {
+  width:80%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#buttonHolder2 {
+  width:80%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+iframe {
+  width:100%;
+  height:300px;
+  border-width:0px;
+  
+}
+
+.promo {
+    font-family:Sans-serif;
+  color:white;
+  width:100%;
+  height:win-content;
+  font-size:23px;
+  margin:10px;
+    margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  text-align:center;
+}
+
+#footer {
+  width:100%;
+  height:100px;
+  background-color:#424242;
+  margin-top:30px;
+  padding-top:20px;
+  display:flex;
+  flex-direction:collumn;
+  justify-content:center;
+}
+
+#footerChild {
+  width:100%;
+  height:60%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+#end {
+  width:100%;
+  font-size:40px;
+  color:white;
+  font-family:Sans-serif;
+  text-align:center;
+}
+
+.holder {
+  padding:15px;
+  width:80%;
+  margin-top:12px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:60px;
+}
+
+#twitter {
+  object-fit:contain;
+  width:30px;
+  height:40px;
+}
+
+#yt {
+  object-fit:contain;
+  width:30px;
+  height:40px;
+  margin-left:12px;
+}
+
+a {
+  margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<div id='header'>
+    <img src='https://media.discordapp.net/attachments/898978597996466189/1025823385000890390/favIcon.png' id='logo' style='margin-left:2px;height:50px; width:50px;  object-fit:contain; margin-top:auto;margin-bottom:auto;'>
+  <p id='name'>Design Responsive</p>
+</div>
+
+<div id='intro'>
+      <img src='https://media.discordapp.net/attachments/898978597996466189/1025823385000890390/favIcon.png' id='logo2' style='margin-left:2px;height:30%; width:70%;  object-fit:contain; margin-top:auto;margin-left:auto;margin-right:auto;'>
+  <p id='introText'>Succes Starts With Great Design</p>
+</div>
+
+<p id='name2'>Meet Design Responsive.</p>
+<p id='name3'>Never Worry about diffrent screen sizings ever again.</p>
+
+<div id='buttonHolder'>
+<button id='startt' >Get Started</button>
+</div>
+
+<div class='holder' style='background-color:rgba(0, 140, 205,0.3);'>
+<p id='name4'>Principle.</p>
+<iframe src="https://embed.lottiefiles.com/animation/52421"></iframe>
+<p id='name5'>It's simple.</p>
+<p id='name6'>Never Worry about diffrent screen sizings ever again.</p>
+<p id='name7'>Wether your looking for mobile and tablet support or only dekstop.</p>
+<p id='name8'>With Design Responsive you can suupport all devices with or without support.</p>
+<button id='starttt' >Start Designing</button>
+</div>
+
+<div class='holder' style='margin-top:60px; background-color:rgba(205, 0, 0,0.3);'>
+<p id='name9'>Billions of screens one website.</p>
+<iframe src="https://embed.lottiefiles.com/animation/59445"></iframe>
+<p class='promo'>Are you tired of designing for a screen only to find out it doesn't work on mobile?.</p>
+<p class='promo'>With Design Responsive you'll never worry about that ever again.</p>
+<p class='promo'>All you need to do is design and Design Responsive does the rest.</p>
+<button id='startttt' >Get Started</button>
+</div>
+
+<div class='holder' style='margin-top:60px; background-color:rgba(130, 0, 205,0.3);'>
+<p id='end'>So what Will You Design Today?</p>
+  <button id='starttttt' >Get Designing</button>
+</div>
+
+<div id='footer'>
+  <div style='width:100%; height:100%;'>
+  <div id='footerChild'>
+    <img id='twitter'src='https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png' onclick='window.open("https://twitter.com/Sketch68862592")'>
+        <img id='yt' src='https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png' onclick='window.open("https://www.youtube.com/channel/UCdI5Lpnho7khE1DnDyrD6Ig")'>
+  </div>
+          <p style='margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;'>Design Responsive is free thanks to our donors.</p>
+              <p style='margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;'>Feel free to <a href='https://www.buymeacoffee.com/SketchDonate'> Support us by donating</a>.</p>
+  </div>
+</div>
+  
+  
+      <script id="rendered-js" type="module">
+import { getWidth,getHeight,resizeElement, resizeAllElements,setSize,getResizedElements} from "https://codepen.io/lukeplays33/pen/RwyjKzX.js";
+
+resizeElement(document.getElementById('name2'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name4'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name5'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name6'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name7'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name8'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name9'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('name'),['width','margin','font-size']);
+resizeElement(document.getElementById('name3'),['width','marginBottom','font-size']);
+resizeElement(document.getElementById('intro'),['width','margin','fontSize','borderRadius']);
+resizeElement(document.getElementById('logo2'),['width','margin','font-size']);
+resizeElement(document.getElementById('introText'),['width','margin','font-size']);
+resizeElement(document.getElementById('startt'),['width','margin','borderRadius','fontSize']);
+resizeElement(document.getElementById('starttt'),['width','margin','borderRadius','fontSize']);
+resizeElement(document.getElementById('startttt'),['width','margin','borderRadius','fontSize']);
+resizeElement(document.getElementById('starttttt'),['width','margin','borderRadius','fontSize']);
+resizeElement(document.getElementById('buttonHolder'),['width','margin','font-size']);
+resizeElement(document.getElementById('logo'),['height']);
+resizeElement(document.getElementById('footer'),['marginTop','width','height','padding-top']);
+resizeElement(document.getElementById('end'),['marginTop','width','fontSize']);
+
+resizeElement(document.getElementById('twitter'),['width','height']);
+resizeElement(document.getElementById('yt'),['width','height']);
+
+resizeElement(document.getElementsByClassName('holder')[0],['padding','marginTop','borderRadius']);
+
+resizeElement(document.getElementsByClassName('holder')[1],['padding','marginTop','borderRadius']);
+
+resizeElement(document.getElementsByClassName('holder')[2],['padding','marginTop','borderRadius']);
+
+for(var i of document.getElementsByClassName('promo')) {
+  resizeElement(i,['width','marginBottom','font-size']);
+}
+
+resizeAllElements(getResizedElements());
+
+document.getElementById('startt').onclick = function () {
+  window.location.href = 'https://lukeplays33.github.io/Design-Responsive-Docs/';
+}
+
+document.getElementById('starttt').onclick = function () {
+  window.location.href = 'https://lukeplays33.github.io/Design-Responsive-Docs/';
+}
+
+document.getElementById('startttt').onclick = function () {
+  window.location.href = 'https://lukeplays33.github.io/Design-Responsive-Docs/';
+}
+
+document.getElementById('starttttt').onclick = function () {
+  window.location.href = 'https://lukeplays33.github.io/Design-Responsive-Docs/';
+}
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
