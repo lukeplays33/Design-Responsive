@@ -2,7 +2,7 @@ var width = 376.346;
 var height = 668.2;
 
 if(window.innerWidth < 600) {
-  width - 50;
+  width - 100;
   height - 100;
 }
 
