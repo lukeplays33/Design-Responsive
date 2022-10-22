@@ -1,6 +1,7 @@
 var width = 376.346;
 var height = 668.2;
 
+// check sizings
 if(window.innerWidth < 600) {
   width - 200;
 }
