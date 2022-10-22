@@ -1,5 +1,11 @@
 var width = 376.346;
 var height = 668.2;
+
+if(window.innerWidth < 600) {
+  width - 50;
+  height - 100;
+}
+
 var noChangeWidth = width;
 var noChangeHeight = height;
 
