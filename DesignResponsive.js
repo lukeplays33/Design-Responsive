@@ -64,7 +64,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
            var h = Number(String(val).replaceAll('px',''));
        var j = window.innerWidth < 600 ? width : height;
       var pc = Number(h/j) * 100;
-          id.style[i] = String(pc) + 'vmin';
+          id.style[i] = String(pc * 2) + 'vmin';
      }
   }
   
