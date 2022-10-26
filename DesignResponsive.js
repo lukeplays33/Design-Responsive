@@ -1,6 +1,11 @@
 var width = 376.346;
 var height = 668.2;
 
+if(window.innerWidth < 600 {
+   width = width - 100
+   height = height - 100
+   }
+
 var noChangeWidth = width;
 var noChangeHeight = height;
 
@@ -62,9 +67,9 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
          
          
            var h = Number(String(val).replaceAll('px',''));
-       var j = window.innerWidth < 600 ? width : height;
+       var j = width //window.innerWidth < 600 ? width : height;
       var pc = Number(h/j) * 100;
-          id.style[i] = String(pc * 2) + 'vmin';
+          id.style[i] = String(pc) + 'vmin';
      }
   }
   
