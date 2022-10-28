@@ -60,7 +60,7 @@ export function resizeElement (id,include = ['width','height','font-size','paddi
           id.style.minHeight = String(pc) + '%';
      } else if(i == 'font-size') {
            var h = Number(String(styles.fontSize).replaceAll('px',''));
-       var j = window.innerWidth < 600 ? width - 50 : width;
+       var j = window.innerWidth < 600 ? width - 100 : width;
       var pc = Number(h/j) * 70;
           id.style.fontSize = String(pc) + 'vmin';
      } else {
