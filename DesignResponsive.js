@@ -1,36 +1,46 @@
 var width = 376.346;
 var height = 668.2;
 
-
+if(window.innerWidth < 600) {
+   width = width - 50
+  height = height - 35
+   }
 
 var noChangeWidth = width;
 var noChangeHeight = height;
 
 var resizedEll = [];
 
-function getResizedElements () {
+export function getResizedElements () {
   return resizedEll;
 }
 
-function getWidth () {
+export function getWidth () {
   return width
 }
 
-function getHeight () {
+export function getHeight () {
   return height
 }
 
-function setSize (w,h) {
+export function setSize (w,h) {
   width = w;
   height = h;
+  
+  if(window.innerWidth < 600) {
+   width = width - 50
+  height = height - 35
+   }
+  
   noChangeWidth = w;
   noChangeHeight = h;
 }
 
 var am = 0
 
-function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+export function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
   resizedEll.push(id);
+  
       document.body.style.width = width + 'px';
   document.body.style.height = height + 'px';
     
@@ -50,7 +60,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
           id.style.minHeight = String(pc) + '%';
      } else if(i == 'font-size') {
            var h = Number(String(styles.fontSize).replaceAll('px',''));
-       var j = window.innerWidth < 600 ? width - 100 : width;
+       var j = window.innerWidth < 600 ? width - 50 : width;
       var pc = Number(h/j) * 70;
           id.style.fontSize = String(pc) + 'vmin';
      } else {
@@ -64,7 +74,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
          
          
            var h = Number(String(val).replaceAll('px',''));
-       var j = width //window.innerWidth < 600 ? width : height;
+       var j = window.innerWidth < 600 ? width : height;
       var pc = Number(h/j) * 100;
           id.style[i] = String(pc) + 'vmin';
      }
@@ -79,7 +89,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
   
 }
 
-function resizeAllElements(skip = [], include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+export function resizeAllElements(skip = [], include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
     var el = document.body.getElementsByTagName('*');
   for(var i of el) {
  
