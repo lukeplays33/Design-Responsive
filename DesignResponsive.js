@@ -11,19 +11,19 @@ var noChangeHeight = height;
 
 var resizedEll = [];
 
-export function getResizedElements () {
+function getResizedElements () {
   return resizedEll;
 }
 
-export function getWidth () {
+function getWidth () {
   return width
 }
 
-export function getHeight () {
+function getHeight () {
   return height
 }
 
-export function setSize (w,h) {
+function setSize (w,h) {
   width = w;
   height = h;
   
@@ -38,7 +38,7 @@ export function setSize (w,h) {
 
 var am = 0
 
-export function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
   resizedEll.push(id);
   
       document.body.style.width = width + 'px';
@@ -89,7 +89,7 @@ export function resizeElement (id,include = ['width','height','font-size','paddi
   
 }
 
-export function resizeAllElements(skip = [], include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+function resizeAllElements(skip = [], include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
     var el = document.body.getElementsByTagName('*');
   for(var i of el) {
  
