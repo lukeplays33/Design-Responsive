@@ -2,7 +2,7 @@ var width = 376.346;
 var height = 668.2;
 
 if(window.innerWidth < 600) {
-   width = width - 50
+   width = width - 80
   height = height - 35
    }
 
@@ -28,7 +28,7 @@ function setSize (w,h) {
   height = h;
   
   if(window.innerWidth < 600) {
-   width = width - 50
+   width = width - 80
   height = height - 35
    }
   
@@ -60,7 +60,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
           id.style.minHeight = String(pc) + '%';
      } else if(i == 'font-size') {
            var h = Number(String(styles.fontSize).replaceAll('px',''));
-       var j = window.innerWidth < 600 ? width - 70 : width;
+       var j = window.innerWidth < 600 ? width - 30 : width;
       var pc = Number(h/j) * 70;
           id.style.fontSize = String(pc) + 'vmin';
      } else {
