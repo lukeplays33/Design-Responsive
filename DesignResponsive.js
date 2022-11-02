@@ -4,6 +4,7 @@ var height = 668.2;
 if(window.innerWidth < 600) {
    width = width - 80
   height = height - 20
+alert();
    }
 
 var noChangeWidth = width;
