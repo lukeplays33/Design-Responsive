@@ -254,7 +254,7 @@ iframe {
   height:40px;
 }
 
-#yt {
+#yt,#dc {
   object-fit:contain;
   width:30px;
   height:40px;
@@ -336,6 +336,7 @@ a {
   <div style='width:100%; height:100%;'>
   <div id='footerChild'>
     <img id='twitter'src='https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png' onclick='window.open("https://twitter.com/Sketch68862592")'>
+    <img id='dc' src='https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-White-1024x780.png' onclick='window.open("https://discord.gg/NxAJu3n3NS")'>
         <img id='yt' src='https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png' onclick='window.open("https://www.youtube.com/channel/UCdI5Lpnho7khE1DnDyrD6Ig")'>
   </div>
           <p style='margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;'>Design Responsive is free thanks to our donors.</p>
@@ -374,6 +375,7 @@ resizeElement(document.getElementById('end'),['marginTop','width','fontSize']);
 
 resizeElement(document.getElementById('twitter'),['width','height']);
 resizeElement(document.getElementById('yt'),['width','height']);
+        resizeElement(document.getElementById('dc'),['width','height']);
 
 resizeElement(document.getElementsByClassName('holder')[0],['padding','marginTop','borderRadius']);
 
