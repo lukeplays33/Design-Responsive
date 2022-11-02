@@ -3,7 +3,7 @@ var height = 668.2;
 
 if(window.innerWidth < 600) {
    width = width - 80
-  height = height - 35
+  height = height - 20
    }
 
 var noChangeWidth = width;
@@ -29,7 +29,7 @@ function setSize (w,h) {
   
   if(window.innerWidth < 600) {
    width = width - 80
-  height = height - 35
+  height = height - 20
    }
   
   noChangeWidth = w;
