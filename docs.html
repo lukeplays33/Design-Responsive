@@ -78,6 +78,20 @@ body,html {
   border-color:grey;
 }
 
+.name2smallc {
+  font-family:Sans-serif;
+  color:white;
+  font-size:17px;
+  margin:0px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  border-width:0px;
+    border-bottom-width:1px;
+  border-style:solid;
+  border-color:grey;
+}
+
 .name2med {
   font-family:Sans-serif;
   color:white;
@@ -131,11 +145,26 @@ body,html {
 }
 
 .holder2 {
+  margin-top:10px;
   background-color:#424242;
   width:90%;
   margin-left:auto;
   margin-right:auto;
-  border-radius:50px;
+  border-radius:25px;
+  color:white;
+  padding:10px;
+  font-family:Sans-serif;
+    display:flex;
+  flex-direction:column;
+}
+
+.holder22 {
+  margin-top:8px;
+  background-color:#424242;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:20px;
   color:white;
   padding:10px;
   font-family:Sans-serif;
@@ -149,7 +178,7 @@ body,html {
   height:40px;
 }
 
-#yt {
+#yt,#dc {
   object-fit:contain;
   width:30px;
   height:40px;
@@ -180,6 +209,32 @@ a {
   color: white;
   opacity: 1; /* Firefox */
 }
+
+.codeView {
+  margin-top:8px;
+  width:100%;
+  display:flex;
+  felx-direction:row;
+}
+
+th,td{
+  font-size:17px;
+  padding:6px;
+  font-size:17px;
+  background-color:#595959;
+  border-radius:20px;
+  min-width:160px;
+  text-align:center;
+  margin-bottom:8px;
+  margin-right:8px;
+}
+
+table{
+  margin:8px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0px;
+}
 </style>
 
   
@@ -190,7 +245,11 @@ a {
 </head>
 
 <body translate="no" >
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <div id='header'>
     <img src='https://media.discordapp.net/attachments/898978597996466189/1025823385000890390/favIcon.png' id='logo' style='margin-left:2px;height:50px; width:50px;  object-fit:contain; margin-top:auto;margin-bottom:auto;'>
@@ -201,59 +260,229 @@ a {
 <p class='name2small'> We're excited to get you started.</p>
 <p class='name2med'> Installation.</p>
 
-<div class='holder'>
+<div class='holder' id='i'>
   <p class='name2small' style='border-bottom-width:0px;'>Installation.</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='initArrow' class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+</div>
+
+<div id='init' style='display:none;' class='holder2'>
+  <p class='name2small' style='width:100%; border-bottom-width:0px;'>Add the following script tag to the head of your HTML file to implement the latest version of Design Responsive.</p>
+  <div style='overflow:scroll; margin-top:8px; display:flex; flex-direction:row; justify-contenbt:flex-start;'>
+    <p class='name2smallc' style=' border-bottom-width:0px; margin:0px;color:orange'>
+      <
+    </p>
+          <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      script
+    </p>
+    
+              <p class='name2smallc' style='margin:0px; margin-left:8px; border-bottom-width:0px; color:yellow'>
+      src=
+    </p>
+                  <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:lightgreen; width:max-content;'>
+      "https://cdn.jsdelivr.net/gh/lukeplays33/<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f8bc9d8b91969fd5aa9d8b8897968b918e9db895999196">[email&#160;protected]</a>/DesignResponsive.js"
+    </p>
+                  <p class='name2smallc' style='margin:0px; margin-left:8px; border-bottom-width:0px; color:orange'>
+      <
+    </p>
+                                      <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      /
+    </p>
+                                          <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      script
+    </p>
+                                              <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      >
+    </p>
+  </div>
+  <div class='holder22' style='padding:4px; font-size:17px;   margin-left:auto;
+  margin-right:auto; width:40px; text-align:center; background-color:#595959;' onclick='navigator.clipboard.writeText(`<script src="https://cdn.jsdelivr.net/gh/lukeplays33/Desing-Responsive@main/DesignResponsive.js"  ></script>`);'>
+    Copy
+  </div>
 </div>
 
 <p class='name2med'> Functions.</p>
 
-<div class='holder'>
-  <p class='name2small' style='border-bottom-width:0px;'>getWidth()</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
-</div>
-
-<div class='holder' style='margin-top: 10px;'>
-  <p class='name2small' style='border-bottom-width:0px;'>getHeight()</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
-</div>
-
-<div class='holder' style='margin-top: 10px;'>
+<div id='setSize' class='holder'>
   <p class='name2small' style='border-bottom-width:0px;'>setSize()</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='setSizeArrow' class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
 </div>
 
-<div class='holder' style='margin-top: 10px;'>
+<div id='tSetSize' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:row; justify-contenbt:flex-start;'>
+    <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      setSize(Width,Height);
+    </p>
+  </div>
+    <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Sets the values for the screen width and height,
+     used to calculate values for each CSS property.</p>
+  <table>
+    <tr>
+      <th> Input </th>
+      <th> Accepts</th>
+    </tr>
+    <tr>
+      <td>Width</td>
+      <td>Number</td>
+    </tr>
+        <tr>
+      <td>Height</td>
+      <td>Number</td>
+    </tr>
+  </table>
+</div>
+
+<div id='g' class='holder' style='margin-top: 10px;'>
+  <p class='name2small' style='border-bottom-width:0px;'>getWidth() and getHeight()</p>
+  <p id='getArrow' class='name2small' style='text-align:right; border-bottom-width:0px; width:10%;'> ></p>
+</div>
+
+<div id='tget' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:row; justify-contenbt:flex-start;'>
+    <div>
+    <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      getWidth();
+    </p>
+        <p class='name2smallc' style='margin:0px; margin-top:8px; border-bottom-width:0px; color:orange'>
+      getHeight();
+    </p>
+    </div>
+  </div>
+    <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Returns the calculated value of the screen width or height set by the setSize() function.</p>
+  <table>
+    <tr>
+      <th> Function </th>
+      <th> Returns</th>
+    </tr>
+    <tr>
+      <td>getWidth()</td>
+      <td>Number</td>
+    </tr>
+        <tr>
+      <td>getHeight()</td>
+      <td>Number</td>
+    </tr>
+  </table>
+</div>
+
+<div id='tGetRe' class='holder' style='margin-top: 10px;'>
   <p class='name2small' style='border-bottom-width:0px;'>getResizedElements()</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='resizeElArrow' class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
 </div>
 
-<div class='holder' style='margin-top: 10px;'>
+<div id='tgetRe' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:row; justify-contenbt:flex-start;'>
+    <div>
+    <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      getResizedElements();
+    </p>
+    </div>
+  </div>
+    <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Returns all elements that have been resized.</p>
+  <table>
+    <tr>
+      <th> Function </th>
+      <th> Returns</th>
+    </tr>
+    <tr>
+      <td>getResizedElements()</td>
+      <td>Array</td>
+    </tr>
+  </table>
+</div>
+
+<div id='resizeEl' class='holder' style='margin-top: 10px;'>
   <p class='name2small' style='border-bottom-width:0px;'>resizeElement()</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='reElleArrow' class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
 </div>
 
-<div class='holder' style='margin-top: 10px;'>
+<div id='treell' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:row; justify-contenbt:flex-start;'>
+    <div>
+    <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      resizeElement(element,properties);
+    </p>
+    </div>
+  </div>
+    <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Resizes the given element's CSS properties.</p>
+  <table>
+    <tr>
+      <th> Input </th>
+      <th> Accepts</th>
+    </tr>
+    <tr>
+      <td>Element</td>
+      <td>HTMLElement</td>
+    </tr>
+        <tr>
+      <td>Properties</td>
+      <td>Array of CSS property names</td>
+    </tr>
+  </table>
+</div>
+
+<div id='tReAll' class='holder' style='margin-top: 10px;'>
   <p class='name2small' style='border-bottom-width:0px;'>resizeAllElements()</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='reAllArrow' class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+</div>
+
+<div id='treellAll' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:row; justify-contenbt:flex-start;'>
+    <div>
+    <p class='name2smallc' style='margin:0px; border-bottom-width:0px; color:orange'>
+      resizeAllElements(elements,properties);
+    </p>
+    </div>
+  </div>
+    <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Resizes all element's inside of the body.</p>
+  <table>
+    <tr>
+      <th> Input </th>
+      <th> Accepts</th>
+    </tr>
+    <tr>
+      <td>Elements</td>
+      <td>Array of HTMLElement</td>
+    </tr>
+        <tr>
+      <td>Properties</td>
+      <td>Array of CSS property names</td>
+    </tr>
+  </table>
 </div>
 
 <p class='name2med'> FAQ.</p>
 
-<div class='holder' style='margin-top: 10px;'>
+<div id='CSSsup' class='holder' style='margin-top: 10px;'>
   <p class='name2small' style='border-bottom-width:0px;'>Longhand and Shorthand support.</p>
-  <p class='name2small' style='width:10%; text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='CSSSupArrow' class='name2small' style='width:10%; text-align:right; border-bottom-width:0px;'> ></p>
 </div>
 
-<div class='holder' style='margin-top: 10px;'>
+<div id='CSSSupT' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:column; justify-contenbt:flex-start;'>
+    <p class='name2small' style='margin-top:0px; width:100%; border-bottom-width:0px;'>Longhand and Shorthand names are supported but it's recommended to never use both of them at the same time.</p>
+        <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>E.g. if your css has both margin and margin-left never use margin as this will not work.</p>
+            <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Insted use margin-left,margin-right,margin-top and margin-bottom if both are in use.</p>
+  </div>
+</div>
+
+<div id='tIframe' class='holder' style='margin-top: 10px;'>
   <p class='name2small' style='border-bottom-width:0px;'>Reloading an Iframe.</p>
-  <p class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+  <p id='TIframeArrow' class='name2small' style='text-align:right; border-bottom-width:0px;'> ></p>
+</div>
+
+<div id='IframeT' style='display:none;' class='holder2'>
+  <div style='overflow:scroll; display:flex; flex-direction:column; justify-contenbt:flex-start;'>
+    <p class='name2small' style='margin-top:0px; width:100%; border-bottom-width:0px;'>If you are using an ifrmae you may have noticed that the SRC is loaded twice.</p>
+        <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>This is to make sure that all webpages inside of the Iframe are rendered correctly.</p>
+            <p class='name2small' style='margin-top:8px; width:100%; border-bottom-width:0px;'>Bacause some sites center specific elements, the SRC is reloaded to make sure everything is aligned correctly and does not stick to the old iframe size.</p>
+  </div>
 </div>
 
 <div id='footer'>
   <div style='width:100%; height:100%;'>
   <div id='footerChild'>
     <img id='twitter'src='https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png' onclick='window.open("https://twitter.com/Sketch68862592")'>
+    <img id='dc' src='https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-White-1024x780.png' onclick='window.open("https://discord.gg/NxAJu3n3NS")'>
         <img id='yt' src='https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png' onclick='window.open("https://www.youtube.com/channel/UCdI5Lpnho7khE1DnDyrD6Ig")'>
   </div>
           <p style='margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;'>Design Responsive is free thanks to our donors.</p>
@@ -263,7 +492,7 @@ a {
 
 <button id='top'>Back To Top</button>
   
-  <script src='https://cdn.jsdelivr.net/gh/lukeplays33/Design-Responsive@main/DesignResponsive.js'></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://cdn.jsdelivr.net/gh/lukeplays33/Design-Responsive@main/DesignResponsive.js'></script>
       <script id="rendered-js" type="module">
 //https://cdn.jsdelivr.net/gh/lukeplays33/Design-Responsive@main/DesignResponsive.js
 
@@ -271,7 +500,7 @@ a {
 
 
 resizeElement(document.getElementById('logo'),['height']);
-resizeElement(document.getElementById('name2'),['font-size','width']);
+resizeElement(document.getElementById('name2'),['font-size','width','margin-top']);
 resizeElement(document.getElementById('footer'),['marginTop','width','height','padding-top']);
 
 for(var i of document.getElementsByClassName('holder')) {
@@ -280,6 +509,14 @@ for(var i of document.getElementsByClassName('holder')) {
 
 for(var i of document.getElementsByClassName('holder2')) {
   resizeElement(i,['margin-top','padding','width','font-size']);
+}
+
+for(var i of document.getElementsByClassName('holder22')) {
+  resizeElement(i,['margin-top','padding','width','font-size']);
+}
+
+for(var i of document.getElementsByClassName('name2smallc')) {
+  resizeElement(i,['margin-left','padding','width','font-size']);
 }
 
 for(var i of document.getElementsByClassName('name2small')) {
@@ -292,6 +529,7 @@ for(var i of document.getElementsByClassName('name2med')) {
 
 resizeElement(document.getElementById('twitter'),['width','height']);
 resizeElement(document.getElementById('yt'),['width','height']);
+resizeElement(document.getElementById('dc'),['width','height']);
 
 resizeElement(document.getElementById('top'),['border-radius','right','bottom','height','width','font-size']);
 
@@ -316,6 +554,190 @@ window.ontouchmove = function () {
     document.getElementById('top').style.display = 'none';
   } else {
     document.getElementById('top').style.display = 'block';
+  }
+}
+
+document.getElementById('i').onclick = function () {
+  if(document.getElementById('initArrow').innerHTML == ' &gt;') {
+    
+    for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('initArrow').innerHTML = 'X'
+   
+        for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('init').style.display = 'block'
+  } else {
+     document.getElementById('initArrow').innerHTML = ' &gt;'
+    document.getElementById('init').style.display = 'none'
+  }
+}
+
+  document.getElementById('setSize').onclick = function () {
+  if(document.getElementById('setSizeArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('setSizeArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('tSetSize').style.display = 'block'
+  } else {
+     document.getElementById('setSizeArrow').innerHTML = ' &gt;'
+    document.getElementById('tSetSize').style.display = 'none'
+  }
+}
+
+  document.getElementById('g').onclick = function () {
+  if(document.getElementById('getArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('getArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('tget').style.display = 'block'
+  } else {
+     document.getElementById('getArrow').innerHTML = ' &gt;'
+    document.getElementById('tget').style.display = 'none'
+  }
+}
+
+document.getElementById('tGetRe').onclick = function () {
+  if(document.getElementById('resizeElArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('resizeElArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('tgetRe').style.display = 'block'
+  } else {
+     document.getElementById('resizeElArrow').innerHTML = ' &gt;'
+    document.getElementById('tgetRe').style.display = 'none'
+  }
+}
+
+document.getElementById('tReAll').onclick = function () {
+  if(document.getElementById('reAllArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('reAllArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('treellAll').style.display = 'block'
+  } else {
+     document.getElementById('reAllArrow').innerHTML = ' &gt;'
+    document.getElementById('treellAll').style.display = 'none'
+  }
+}
+
+document.getElementById('resizeEl').onclick = function () {
+  if(document.getElementById('reElleArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('reElleArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('treell').style.display = 'block'
+  } else {
+     document.getElementById('reElleArrow').innerHTML = ' &gt;'
+    document.getElementById('treell').style.display = 'none'
+  }
+}
+
+document.getElementById('tIframe').onclick = function () {
+  if(document.getElementById('TIframeArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('TIframeArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('IframeT').style.display = 'block'
+  } else {
+     document.getElementById('TIframeArrow').innerHTML = ' &gt;'
+    document.getElementById('IframeT').style.display = 'none'
+  }
+}
+
+document.getElementById('CSSsup').onclick = function () {
+  if(document.getElementById('CSSSupArrow').innerHTML == ' &gt;') {
+   
+     for(var i of document.getElementsByClassName('holder')) {
+      for(var e of i.children) {
+        if(String(e.id).includes('Arrow')) {
+          e.innerHTML = ' &gt;'
+        }
+      }
+    }   
+    document.getElementById('CSSSupArrow').innerHTML = 'X'
+    
+    for(var i of document.getElementsByClassName('holder2')) {
+      i.style.display = 'none'
+    }
+    
+     document.getElementById('CSSSupT').style.display = 'block'
+  } else {
+     document.getElementById('CSSSupArrow').innerHTML = ' &gt;'
+    document.getElementById('CSSSupT').style.display = 'none'
   }
 }
     </script>
