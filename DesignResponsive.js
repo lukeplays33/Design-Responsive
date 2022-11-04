@@ -2,8 +2,14 @@ var width = 376.346;
 var height = 668.2;
 
 if(window.innerWidth < 600) {
-   width = width - 80
-  height = height - 20
+   width = width - 80;
+   } else if(window.innerWidth < 1600) {
+   
+   } else {
+     const am = window.innerWidth - 1600;
+     const div = am / 600;
+     width = width + 80 * div
+     height = height + 20 * div
    }
 
 var noChangeWidth = width;
@@ -11,25 +17,31 @@ var noChangeHeight = height;
 
 var resizedEll = [];
 
-function getResizedElements () {
+ function getResizedElements () {
   return resizedEll;
 }
 
-function getWidth () {
+ function getWidth () {
   return width
 }
 
-function getHeight () {
+ function getHeight () {
   return height
 }
 
-function setSize (w,h) {
+ function setSize (w,h) {
   width = w;
   height = h;
   
-  if(window.innerWidth < 600) {
-   width = width - 80
-  height = height - 20
+if(window.innerWidth < 600) {
+   width = width - 80;
+   } else if(window.innerWidth < 1600) {
+   
+   } else {
+     const am = window.innerWidth - 1600;
+     const div = am / 600;
+     width = width + 80 * div
+     height = height + 20 * div
    }
   
   noChangeWidth = w;
@@ -38,7 +50,7 @@ function setSize (w,h) {
 
 var am = 0
 
-function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+ function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
   resizedEll.push(id);
   
       document.body.style.width = width + 'px';
@@ -50,12 +62,13 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
   var styles = window.getComputedStyle(id,null);
   
   for (var i of include) {
-    if(i == 'width') {
-          var w = Number(String(styles.width).replaceAll('px',''));
+    if(i.includes('width')) {
+          var w = Number(String(styles[i]).replaceAll('px',''));
     var pc = Number(w / width) * 100;
+
     id.style.minWidth = String(pc) + '%';
-    } else if (i == 'height') {
-           var h = Number(String(styles.height).replaceAll('px',''));
+    } else if (i.includes('height')) {
+           var h = Number(String(styles[i]).replaceAll('px',''));
       var pc = Number(h / height) * 100;
           id.style.minHeight = String(pc) + '%';
      } else if(i == 'font-size') {
@@ -89,7 +102,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
   
 }
 
-function resizeAllElements(skip = [], include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+ function resizeAllElements(skip = [], include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
     var el = document.body.getElementsByTagName('*');
   for(var i of el) {
  
