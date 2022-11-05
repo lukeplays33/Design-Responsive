@@ -50,7 +50,7 @@ if(window.innerWidth < 600) {
 
 var am = 0
 
- function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
+function resizeElement (id,include = ['width','height','font-size','padding','margin','border-width','border-radius']) {
   resizedEll.push(id);
   
       document.body.style.width = width + 'px';
@@ -62,15 +62,31 @@ var am = 0
   var styles = window.getComputedStyle(id,null);
   
   for (var i of include) {
-    if(i.includes('width')) {
-          var w = Number(String(styles[i]).replaceAll('px',''));
+    if(i.includes('max')) {
+      var w = Number(String(styles[i]).replaceAll('px',''));
+      var a = i.includes('height') ? height : width;
+      var pc = Number(w / a) * 165;
+      id.style[i] = pc + '%';
+    } else if(i.includes('width')) {
+      if(styles.getPropertyValue('width') == 'auto') {
+          var w = Number(String(styles['min-width']).replaceAll('px',''));
+      } else {
+        var w = Number(String(styles['width']).replaceAll('px',''));
+      }
     var pc = Number(w / width) * 100;
+      
+      id.style.minWidth = String(pc) + '%';
 
-    id.style.minWidth = String(pc) + '%';
     } else if (i.includes('height')) {
-           var h = Number(String(styles[i]).replaceAll('px',''));
+      if(styles.getPropertyValue('height') == 'auto') {
+           var h = Number(String(styles['min-height']).replaceAll('px',''));
+      } else {
+                     var h = Number(String(styles['height']).replaceAll('px',''));
+        }
       var pc = Number(h / height) * 100;
-          id.style.minHeight = String(pc) + '%';
+          
+    id.style.minHeight = String(pc) + '%';
+      
      } else if(i == 'font-size') {
            var h = Number(String(styles.fontSize).replaceAll('px',''));
        var j = window.innerWidth < 600 ? width - 30 : width;
