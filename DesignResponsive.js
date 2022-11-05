@@ -2,7 +2,7 @@ var width = 376.346;
 var height = 668.2;
 
 if(window.innerWidth < 600) {
-   width = width - 80;
+   width = width - 100;
    } else if(window.innerWidth < 1600) {
    
    } else {
@@ -34,7 +34,7 @@ var resizedEll = [];
   height = h;
   
 if(window.innerWidth < 600) {
-   width = width - 80;
+   width = width - 100;
    } else if(window.innerWidth < 1600) {
    
    } else {
