@@ -153,7 +153,7 @@ padding:15px;
   font-size:17px;
   }
 
-#starttt,#startttt {
+#starttt,#startttt,#starttttg{
   width:200px;
   margin-left:auto;
   margin-right:auto;
@@ -327,6 +327,15 @@ a {
 <p class='promo'>All you need to do is design and Design Responsive does the rest.</p>
 <button id='startttt' >Get Started</button>
 </div>
+  
+  <div class='holder' style='margin-top:60px; background-color:rgba(52, 235, 125,0.4);'>
+<p id='name9'>Precisely sized.</p>
+<iframe src="https://embed.lottiefiles.com/animation/58707"></iframe>
+<p class='promo'>Wheter you're on mobile or on a TV.</p>
+<p class='promo'>No matter how big or small your screens are.</p>
+    <p class='promo'>Your design will always look the same.</p>
+<button id='starttttg' >Get Building</button>
+</div>
 
 <div class='holder' style='margin-top:60px; background-color:rgba(130, 0, 205,0.5);'>
 <p id='end'>So what Will You Design Today?</p>
@@ -369,6 +378,7 @@ resizeElement(document.getElementById('startt'),['width','margin','borderRadius'
 resizeElement(document.getElementById('starttt'),['width','margin','borderRadius','fontSize','height']);
 resizeElement(document.getElementById('startttt'),['width','margin','borderRadius','fontSize','height']);
 resizeElement(document.getElementById('starttttt'),['width','margin','borderRadius','fontSize','height']);
+        resizeElement(document.getElementById('starttttg'),['width','margin','borderRadius','fontSize','height']);
 resizeElement(document.getElementById('buttonHolder'),['width','margin','font-size']);
 resizeElement(document.getElementById('logo'),['height']);
 resizeElement(document.getElementById('footer'),['marginTop','width','height','padding-top']);
@@ -401,6 +411,10 @@ document.getElementById('starttt').onclick = function () {
   window.location.href = 'https://lukeplays33.github.io/Design-Responsive/docs.html';
 }
 
+        document.getElementById('starttttg').onclick = function () {
+  window.location.href = 'https://lukeplays33.github.io/Design-Responsive/docs.html';
+}
+        
 document.getElementById('startttt').onclick = function () {
   window.location.href = 'https://lukeplays33.github.io/Design-Responsive/docs.html';
 }
