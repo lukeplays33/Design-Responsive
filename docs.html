@@ -747,6 +747,12 @@ document.getElementById('CSSsup').onclick = function () {
     document.getElementById('CSSSupT').style.display = 'none'
   }
 }
+        
+        if(window.localStorage.getItem('newSD') == 'lol') {
+  document.getElementById('name2').innerHTML = 'Welcome back👋 to Design Responsive'
+} else {
+  window.localStorage.setItem('newSD','lol');
+}
     </script>
 
   
