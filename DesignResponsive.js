@@ -103,7 +103,7 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
          
          
            var h = Number(String(val).replaceAll('px',''));
-       var j = window.innerWidth < 600 ? width : height;
+       var j = window.innerWidth < 600 ? height-280 : height;
       var pc = Number(h/j) * 100;
           id.style[i] = String(pc) + 'vmin';
      }
