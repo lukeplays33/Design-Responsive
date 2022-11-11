@@ -61,6 +61,9 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
   let hcc = document.body.style.height == String(height + 'px') ? width : window.innerHeight
   var styles = window.getComputedStyle(id,null);
   
+var pos = styles['position'];
+id.style.position = 'static';
+
   for (var i of include) {
     if(i.includes('max')) {
       var w = Number(String(styles[i]).replaceAll('px',''));
@@ -111,6 +114,8 @@ function resizeElement (id,include = ['width','height','font-size','padding','ma
   
           document.body.style.width = window.innerWidth + 'px';
   document.body.style.height = window.innerHeight + 'px';
+
+id.style.position = pos
   
   if(String(id).includes('IFRAME')) {
     id.src = id.src;
