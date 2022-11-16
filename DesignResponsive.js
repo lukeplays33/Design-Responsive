@@ -107,7 +107,7 @@ id.style.position = 'static';
          
            var h = Number(String(val).replaceAll('px',''));
        var j = window.innerWidth < 600 ? height-280 : height;
-      var pc = Number(h/j) * 150;
+      var pc = Number(h/j) * 120;
           id.style[i] = String(pc) + 'vmin';
      }
   }
