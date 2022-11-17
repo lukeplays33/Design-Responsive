@@ -8,8 +8,8 @@ if(window.innerWidth < 600) {
    } else {
      const am = window.innerWidth - 1600;
      const div = am / 600;
-     width = width + 370 * div
-     height = height + 40 * div
+     width = width + 330 * div
+     height = height + 20 * div
    }
 
 var noChangeWidth = width;
@@ -40,8 +40,8 @@ if(window.innerWidth < 600) {
    } else {
      const am = window.innerWidth - 1600;
      const div = am / 600;
-     width = width + 450 * div
-     height = height + 90 * div
+     width = width + 330 * div
+     height = height + 20 * div
    }
   
   noChangeWidth = w;
